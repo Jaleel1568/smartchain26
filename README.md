@@ -1,3 +1,7 @@
+# SmartChain’26 Website
 
-## 🌐 Preview
-This website is currently a local prototype. To view it, open the `index.html` file in a browser or use a local development server.
+Prototype website for the SmartChain’26 project.
+
+##  Live Demo  
+You can view the website here:  
+https://jaleel1568.github.io/smartchain26/
