@@ -27,7 +27,15 @@ const observer = new IntersectionObserver((entries) => {
                     }, index * 150);
                 });
             }
-
+if (entry.target.classList.contains('pub-item')) {
+                const items = entry.target.parentElement.querySelectorAll('.pub-item');
+                items.forEach((item, index) => {
+                    setTimeout(() => {
+                        item.classList.add('show');
+                    }, index * 150);
+                });
+            }
+            observer.unobserve(entry.target);
             observer.unobserve(entry.target);
         }
     });

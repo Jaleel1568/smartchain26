@@ -437,7 +437,115 @@ html {
     line-height: 1.75;
     margin: 0;
 }
+/* PUBLICATIONS */
+#publications {
+    background: #fff;
+    padding: 50px;
+    border-radius: 14px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+}
 
+.pub-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.pub-item {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f8fafc;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.pub-item:hover {
+    border-color: #3b82f6;
+    box-shadow: 0 4px 16px rgba(59,130,246,0.1);
+}
+
+.pub-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    background: #eff6ff;
+    border-right: 1px solid #dbeafe;
+}
+
+.pub-tag {
+    display: inline-block;
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    border-radius: 4px;
+    padding: 0.2rem 0.5rem;
+    width: fit-content;
+}
+
+.pub-published {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.pub-submitted {
+    background: #fef9c3;
+    color: #854d0e;
+}
+
+.pub-venue {
+    font-size: 0.78rem;
+    color: #64748b;
+}
+
+.pub-body {
+    padding: 1.5rem;
+    background: #fff;
+}
+
+.pub-body h3 {
+    margin: 0 0 0.4rem;
+    font-size: 0.97rem;
+    color: #0f172a;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.pub-authors {
+    font-size: 0.8rem;
+    color: #3b82f6;
+    margin: 0 0 0.5rem;
+    font-weight: 500;
+}
+
+.pub-desc {
+    font-size: 0.85rem;
+    color: #64748b;
+    line-height: 1.7;
+    margin: 0 0 0.75rem;
+}
+
+.pub-link {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #2563eb;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.pub-link:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .pub-item { grid-template-columns: 1fr; }
+    .pub-meta { border-right: none; border-bottom: 1px solid #dbeafe; }
+}
 /* TEAM */
 #team {
     background: #fff;
